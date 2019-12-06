@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+<<<<<<< HEAD
 const GuessedWords = ({ guessedWords }) => {
     let content
     if (guessedWords.length === 0) {
@@ -31,6 +32,16 @@ const GuessedWords = ({ guessedWords }) => {
                 </table>
             </div>
         )
+=======
+const GuessedWords = ({guessedWords}) => {
+    let content
+    if(guessedWords.length === 0){
+        content = (
+            <span data-test="guess-instructions">
+              Try to guess the secret word!  
+            </span>
+        )
+>>>>>>> 62734cee0c8b19c24885695e0c91754f22779167
     }
     return (
         <div data-test="component-guessed-words">
